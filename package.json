@@ -1,0 +1,17 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watchBuild": "node-sass-chokidar ./src/sass/index.scss ./dist/style/style.css --watch --use-polling --polling-interval 1000",
+    "tabletBuild": "node-sass-chokidar ./src/sass/tablet.scss ./dist/style/tabletStyle.css --watch --use-polling --polling-interval 1000",
+    "mobileBuild": "node-sass-chokidar ./src/sass/mobile.scss ./dist/style/mobileStyle.css --watch --use-polling --polling-interval 1000"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass-chokidar": "^1.3.5"
+  }
+}

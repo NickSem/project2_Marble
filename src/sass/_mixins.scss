@@ -1,0 +1,119 @@
+@mixin feature () {
+    font-style: $featureFont;
+    color: $fontDarkGrey;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        font-size: 18px;
+        text-align: center;
+        margin: 25px 0 15px 0;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.7;
+        opacity: 0.8;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 0 30px;
+    }
+}
+
+@mixin latestWork() {
+    max-width: 383px;
+    font-style: $mainFont;
+    color: $fontDarkGrey;
+    text-decoration: none;
+
+    img {
+        width: 383px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin: 23px 0 14px 0;
+    }
+
+    h5 {
+        font-size: 13px;
+        opacity: 0.4;
+        margin-bottom: 14px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 2;
+        opacity: 0.8;
+    }
+}
+
+@mixin footerStyle() {
+    h4 {
+        font-size: 18px;
+        text-transform: uppercase;
+        opacity: 0.7;
+        margin: 50px 0 25px 0;
+    }
+
+    .address_article {
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            margin-bottom: 25px;
+        }
+
+        &.contacts_list {
+
+            li {
+                padding-left: 5px;
+                margin-left: 20px;
+                margin-bottom: 5px;
+            }
+
+            & li:nth-child(1) {
+                list-style-image: url(../../dist/assets/icons/address.png);
+                width: 175px;
+
+            }
+
+            & li:nth-child(2) {
+                list-style-image: url(../../dist/assets/icons/phone.png);
+            }
+
+            & li:nth-child(3) {
+                list-style-image: url(../../dist/assets/icons/mail.png);
+            }
+        }
+
+        &.twitter_list {
+            list-style-image: url(../../dist/assets/icons/twitter.png);
+
+            li {
+                margin-left: 15px;
+                padding-left: 5px;
+            }
+        }
+
+        &.pop_posts_list {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    a,
+    p {
+        font-size: 14px;
+        text-decoration: none;
+        color: $lightGrey;
+        opacity: 0.85;
+    }
+}

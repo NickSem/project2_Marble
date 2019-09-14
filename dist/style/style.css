@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+.content,
+hr {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+header {
+  min-height: 120px;
+  width: 100vw;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #e5e5e5;
+  font-weight: 700; }
+  header .content {
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .content .logo_name {
+      font-size: 40px;
+      color: #4e4e4e;
+      text-transform: uppercase; }
+
+nav input,
+nav label {
+  display: none; }
+
+nav ul {
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none; }
+  nav ul a {
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #4e4e4e; }
+    nav ul a:hover {
+      color: #1abb9c; }
+
+.portfolio {
+  background: url(../../dist/assets/images/banner.jpg) no-repeat top center;
+  background-size: auto 600px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .portfolio .content {
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-style: "Roboto Slab", serif; }
+    .portfolio .content h1 {
+      color: white;
+      font-size: 40px;
+      margin-bottom: 40px; }
+    .portfolio .content h2 {
+      color: white;
+      font-size: 32px;
+      opacity: 0.7;
+      margin-bottom: 40px; }
+    .portfolio .content a {
+      width: 140px;
+      height: 45px;
+      font-size: 14px;
+      color: white;
+      opacity: 0.9;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: #3f8dbf;
+      border-radius: 3px;
+      box-sizing: border-box;
+      padding: 13px 0;
+      box-shadow: inset 0 -3px 3px #3678a3; }
+
+.features {
+  min-height: 330px; }
+  .features .content {
+    height: 330px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100%; }
+    .features .content .feature_wrapper {
+      display: flex;
+      align-items: center; }
+      .features .content .feature_wrapper a {
+        font-style: "Lato", sans-serif;
+        color: #4e4e4e;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .features .content .feature_wrapper a h4 {
+          font-size: 18px;
+          text-align: center;
+          margin: 25px 0 15px 0; }
+        .features .content .feature_wrapper a p {
+          font-size: 14px;
+          line-height: 1.7;
+          opacity: 0.8;
+          text-align: center;
+          box-sizing: border-box;
+          padding: 0 30px; }
+
+hr {
+  height: 2px;
+  border: none;
+  color: #e5e5e5;
+  background-color: #e5e5e5; }
+
+.latest_works {
+  min-height: 560px; }
+  .latest_works h3 {
+    font-size: 18px;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    margin: 60px 0 36px 0; }
+  .latest_works .works_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100%;
+    grid-column-gap: 12px; }
+    .latest_works .works_wrapper .latest_work_wrapper {
+      max-width: 383px;
+      justify-self: center; }
+      .latest_works .works_wrapper .latest_work_wrapper a {
+        max-width: 383px;
+        font-style: "Roboto", sans-serif;
+        color: #4e4e4e;
+        text-decoration: none; }
+        .latest_works .works_wrapper .latest_work_wrapper a img {
+          width: 383px; }
+        .latest_works .works_wrapper .latest_work_wrapper a h4 {
+          font-size: 18px;
+          margin: 23px 0 14px 0; }
+        .latest_works .works_wrapper .latest_work_wrapper a h5 {
+          font-size: 13px;
+          opacity: 0.4;
+          margin-bottom: 14px; }
+        .latest_works .works_wrapper .latest_work_wrapper a p {
+          font-size: 14px;
+          line-height: 2;
+          opacity: 0.8; }
+
+.quote {
+  min-height: 230px;
+  background-color: #e5e5e5; }
+  .quote .content {
+    text-align: center; }
+    .quote .content img {
+      margin: 54px 0 33px 0; }
+    .quote .content p {
+      max-width: 734px;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      font-size: 20px;
+      line-height: 1.5;
+      opacity: 0.5; }
+
+footer {
+  min-height: 460px;
+  background-color: #1c1c1c;
+  color: #e5e5e5;
+  text-decoration: none; }
+  footer .footer_info {
+    min-height: 345px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 100%;
+    grid-column-gap: 45px; }
+    footer .footer_info .footer_info_wrapper h4 {
+      font-size: 18px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin: 50px 0 25px 0; }
+    footer .footer_info .footer_info_wrapper .address_article {
+      margin-bottom: 30px; }
+    footer .footer_info .footer_info_wrapper ul {
+      list-style: none; }
+      footer .footer_info .footer_info_wrapper ul li {
+        margin-bottom: 25px; }
+      footer .footer_info .footer_info_wrapper ul.contacts_list li {
+        padding-left: 5px;
+        margin-left: 20px;
+        margin-bottom: 5px; }
+      footer .footer_info .footer_info_wrapper ul.contacts_list li:nth-child(1) {
+        list-style-image: url(../../dist/assets/icons/address.png);
+        width: 175px; }
+      footer .footer_info .footer_info_wrapper ul.contacts_list li:nth-child(2) {
+        list-style-image: url(../../dist/assets/icons/phone.png); }
+      footer .footer_info .footer_info_wrapper ul.contacts_list li:nth-child(3) {
+        list-style-image: url(../../dist/assets/icons/mail.png); }
+      footer .footer_info .footer_info_wrapper ul.twitter_list {
+        list-style-image: url(../../dist/assets/icons/twitter.png); }
+        footer .footer_info .footer_info_wrapper ul.twitter_list li {
+          margin-left: 15px;
+          padding-left: 5px; }
+      footer .footer_info .footer_info_wrapper ul.pop_posts_list p {
+        font-size: 12px; }
+    footer .footer_info .footer_info_wrapper a,
+    footer .footer_info .footer_info_wrapper p {
+      font-size: 14px;
+      text-decoration: none;
+      color: #e5e5e5;
+      opacity: 0.85; }
+  footer .content > p {
+    padding: 50px 0 45px 0;
+    opacity: 0.7; }
